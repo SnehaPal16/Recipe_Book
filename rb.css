@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@1000&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;;
+
+}
+.container{
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* position: relative;
+    display: flex;  */
+    height: 100%;
+    width: 100%;
+}
+.headimg{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.headtitle{
+    color: rgba(255, 255, 255, 0.675);
+    position: absolute;
+    text-align: center;
+    padding: 0 10rem;
+    top: 25%;
+    font-size: 7rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1.5rem;
+}
+.headnav{
+    position: absolute;
+    font-size: 1.5rem;
+    justify-content: baseline;
+    top: 35rem;
+    left: 88%;
+    transform: translateX(-45%);
+    /* bottom: 0;
+    right: 0; */
+}
+.headnav a{
+    color: rgb(248, 246, 246);
+    text-decoration: none;
+}
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 0 10rem;
+    margin: 5rem 0; 
+}
+.a1{
+    line-height: normal;
+}
+.abttitle{
+    margin-bottom: 20px;
+    font-size: 5rem;;
+}
+.abtcontent{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.contentbox{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 5rem;
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+.cards{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(247, 248, 245, 0.114);
+    overflow: hidden;
+    border: 1px solid black;
+}
+.cardinner{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    object-fit: cover;
+}
+.cards:hover .cardinner{
+    transform: rotateY(180deg);
+}
+.cards:hover{
+    box-shadow:  -35px -35px 65px #2f0808,
+                 35px 35px 65px #2f0808;
+}
+.cardfront,.cardback{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.cardfront{
+    object-fit: cover;
+}
+.cardback{
+    transform: rotateY(180deg);
+    color: rgb(252, 252, 252);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.cardimg{
+    object-fit: fill;
+    position: relative;
+    bottom:50px;
+    height: 75%;
+    width: 100%;
+    border-top-right-radius:50%;
+    border-top-left-radius:50%;
+    border: 1px solid black;
+}
+.cardtitle{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(248, 248, 247);
+}
+.cardtitle:hover{
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+    cursor:pointer;
+}
+
+
+.recipecontainer{
+    color: antiquewhite;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+.recipecontainer img{
+    height: 400px;
+    width: 400px;
+}
+.rhead_img{
+    display: flex;
+    align-items: center;padding-top: 1px;
+}
+.recipecontainer h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.recipecontainer h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.recipecontainer p,ul{
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+    padding-left: 3rem;
+}
+.recipebox{
+    background-color: rgba(3, 3, 3, 0.692);
+    margin-bottom: 2rem;
+}
+footer{
+    background-color: rgb(248, 247, 245);
+    display: flex;
+    justify-content: space-between;
+}
+.foot{
+    display: flex;
+}

@@ -1,0 +1,18 @@
+.circular-card {
+    width: 500px; /* Set the width and height of the circular card */
+    height: 500px;
+    border-radius: 50%; /* Hide any content that overflows the circular shape */
+    overflow: hidden;
+    /* Add additional styling if needed, like border or shadow */
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .circular-card img {
+    width: 100%; /* Make the image fill the circular card */
+    height: 75%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire circular area */
+    border-top-right-radius: 50%; 
+    border-top-left-radius: 50%;/* Ensure the image inside the circular card is also circular */
+  }
+  
